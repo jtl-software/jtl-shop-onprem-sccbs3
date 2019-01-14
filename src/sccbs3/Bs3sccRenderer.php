@@ -4,14 +4,14 @@
  * @license       http://jtl-url.de/jtlshoplicense
  */
 
-namespace bs3;
+namespace sccbs3;
 
 use scc\Renderer;
 use Smarty\JTLSmarty;
 
 /**
  * Class Bs3sccRenderer
- * @package bs3
+ * @package sccbs3
  */
 class Bs3sccRenderer extends Renderer
 {
