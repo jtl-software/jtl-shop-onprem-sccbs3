@@ -7,7 +7,7 @@
 namespace sccbs3;
 
 use scc\Renderer;
-use Smarty\JTLSmarty;
+use JTL\Smarty\JTLSmarty;
 
 /**
  * Class Bs3sccRenderer
