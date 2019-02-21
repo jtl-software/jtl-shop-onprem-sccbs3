@@ -7,7 +7,6 @@
 namespace sccbs3;
 
 use scc\Renderer;
-use JTL\Smarty\JTLSmarty;
 
 /**
  * Class Bs3sccRenderer
@@ -17,9 +16,9 @@ class Bs3sccRenderer extends Renderer
 {
     /**
      * BS3sccRenderer constructor.
-     * @param JTLSmarty $smarty
+     * @param JTL\Smarty\JTLSmarty|\Smarty $smarty $smarty
      */
-    public function __construct(JTLSmarty $smarty)
+    public function __construct($smarty)
     {
         $this->smarty = $smarty;
         $this->smarty->addTemplateDir(__DIR__ . '/templates/', __NAMESPACE__);
