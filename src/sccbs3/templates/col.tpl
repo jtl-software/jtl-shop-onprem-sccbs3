@@ -2,17 +2,17 @@
 {if $params.offset->hasValue()}
     {$class = "{$class} col-xs-offset-{$params.offset->getValue()}"}
 {/if}
-{if $params.offsetSm->hasValue()}
-    {$class = "{$class} col-sm-offset-{$params.offsetSm->getValue()}"}
+{if $params['offset-sm']->hasValue()}
+    {$class = "{$class} col-sm-offset-{$params['offset-sm']->getValue()}"}
 {/if}
-{if $params.offsetMd->hasValue()}
-    {$class = "{$class} col-md-offset-{$params.offsetMd->getValue()}"}
+{if $params['offset-md']->hasValue()}
+    {$class = "{$class} col-md-offset-{$params['offset-md']->getValue()}"}
 {/if}
-{if $params.offsetLg->hasValue()}
-    {$class = "{$class} col-lg-offset-{$params.offsetLg->getValue()}"}
+{if $params['offset-lg']->hasValue()}
+    {$class = "{$class} col-lg-offset-{$params['offset-lg']->getValue()}"}
 {/if}
-{if $params.offsetXl->hasValue()}
-    {$class = "{$class} col-xl-offset-{$params.offsetXl->getValue()}"}
+{if $params['offset-xl']->hasValue()}
+    {$class = "{$class} col-xl-offset-{$params['offset-xl']->getValue()}"}
 {/if}
 {if $params.cols->hasValue()}
     {$class = "{$class} col-xs-{$params.cols->getValue()}"}
