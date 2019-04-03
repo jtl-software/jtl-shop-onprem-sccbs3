@@ -1,4 +1,4 @@
-<{$params.headerTag}
+<{$params['header-tag']}
     {if $params.id->hasValue()} id="{$params.id->getValue()}"{/if}
     {if $params.style->hasValue()} style="{$params.style->getValue()}"{/if}
     class="panel-heading {$params.class->getValue()}
@@ -19,4 +19,4 @@
     {/if}
 >
     {$blockContent}
-</{$params.headerTag}>
+</{$params['header-tag']}>
