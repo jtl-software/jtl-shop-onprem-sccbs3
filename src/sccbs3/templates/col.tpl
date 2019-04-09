@@ -1,41 +1,39 @@
 {$class = 'col '|cat:$params.class->getValue()}
 {if $params.offset->hasValue()}
     {$class = "{$class} col-xs-offset-{$params.offset->getValue()}"}
-{/if}
-{if $params['offset-sm']->hasValue()}
-    {$class = "{$class} col-sm-offset-{$params['offset-sm']->getValue()}"}
+{elseif $params['offset-sm']->hasValue()}
+    {$class = "{$class} col-xs-offset-{$params['offset-sm']->getValue()}"}
 {/if}
 {if $params['offset-md']->hasValue()}
-    {$class = "{$class} col-md-offset-{$params['offset-md']->getValue()}"}
+    {$class = "{$class} col-sm-offset-{$params['offset-md']->getValue()}"}
 {/if}
 {if $params['offset-lg']->hasValue()}
-    {$class = "{$class} col-lg-offset-{$params['offset-lg']->getValue()}"}
+    {$class = "{$class} col-md-offset-{$params['offset-lg']->getValue()}"}
 {/if}
 {if $params['offset-xl']->hasValue()}
-    {$class = "{$class} col-xl-offset-{$params['offset-xl']->getValue()}"}
+    {$class = "{$class} col-lg-offset-{$params['offset-xl']->getValue()}"}
 {/if}
 {if $params.cols->hasValue()}
     {$class = "{$class} col-xs-{$params.cols->getValue()}"}
-{/if}
-{if $params.sm->getValue() === true}
-    {$class = "{$class} col-sm"}
+{elseif $params.sm->getValue() === true}
+    {$class = "{$class} col-xs"}
 {elseif $params.sm->getValue() !== false}
-    {$class = "{$class} col-sm-{$params.sm->getValue()}"}
+    {$class = "{$class} col-xs-{$params.sm->getValue()}"}
 {/if}
 {if $params.md->getValue() === true}
-    {$class = "{$class} col-md"}
+    {$class = "{$class} col-sm"}
 {elseif $params.md->getValue() !== false}
-    {$class = "{$class} col-md-{$params.md->getValue()}"}
+    {$class = "{$class} col-sm-{$params.md->getValue()}"}
 {/if}
 {if $params.lg->getValue() === true}
-    {$class = "{$class} col-lg"}
+    {$class = "{$class} col-md"}
 {elseif $params.lg->getValue() !== false}
-    {$class = "{$class} col-lg-{$params.lg->getValue()}"}
+    {$class = "{$class} col-md-{$params.lg->getValue()}"}
 {/if}
 {if $params.xl->getValue() === true}
-    {$class = "{$class} col-xl"}
+    {$class = "{$class} col-lg"}
 {elseif $params.xl->getValue() !== false}
-    {$class = "{$class} col-xl-{$params.xl->getValue()}"}
+    {$class = "{$class} col-lg-{$params.xl->getValue()}"}
 {/if}
 
 {* These properties are not supported by bootstrap 3.X
