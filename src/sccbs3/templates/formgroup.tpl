@@ -25,14 +25,14 @@
                 </div>
             </div>
         {else}
-            <div class="d-flex flex-column-reverse">
+            <div class="form-group">
                 {if $params.description->hasValue()}
                     <small id="form-group-description-{$id}" class="form-text text-muted">{$params.description->getValue()}</small>
                 {/if}
-                {$blockContent}
                 <label id="form-group-label-{$id}" for="{$params['label-for']->getValue()}" class="col-form-label pt-0{if $params['label-size']->hasValue()} col-form-label-{$params['label-size']->getValue()}{/if}">
                     {$params.label->getValue()}
                 </label>
+                {$blockContent}
             </div>
         {/if}
     </div>
