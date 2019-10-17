@@ -15,24 +15,14 @@
 {/if}
 {if $params.cols->hasValue()}
     {$class = "{$class} col-xs-{$params.cols->getValue()}"}
-{elseif $params.sm->getValue() === true}
-    {$class = "{$class} col-xs"}
-{elseif $params.sm->getValue() !== false}
-    {$class = "{$class} col-xs-{$params.sm->getValue()}"}
 {/if}
-{if $params.md->getValue() === true}
-    {$class = "{$class} col-sm"}
-{elseif $params.md->getValue() !== false}
+{if $params.md->getValue() !== false}
     {$class = "{$class} col-sm-{$params.md->getValue()}"}
 {/if}
-{if $params.lg->getValue() === true}
-    {$class = "{$class} col-md"}
-{elseif $params.lg->getValue() !== false}
+{if $params.lg->getValue() !== false}
     {$class = "{$class} col-md-{$params.lg->getValue()}"}
 {/if}
-{if $params.xl->getValue() === true}
-    {$class = "{$class} col-lg"}
-{elseif $params.xl->getValue() !== false}
+{if $params.xl->getValue() !== false}
     {$class = "{$class} col-lg-{$params.xl->getValue()}"}
 {/if}
 
