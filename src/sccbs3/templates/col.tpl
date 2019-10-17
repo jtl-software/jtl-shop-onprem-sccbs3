@@ -16,13 +16,13 @@
 {if $params.cols->hasValue()}
     {$class = "{$class} col-xs-{$params.cols->getValue()}"}
 {/if}
-{if $params.md->getValue() !== false}
+{if $params.md->getValue() !== false && $params.md->getValue() !== true}
     {$class = "{$class} col-sm-{$params.md->getValue()}"}
 {/if}
-{if $params.lg->getValue() !== false}
+{if $params.lg->getValue() !== false && $params.lg->getValue() !== true}
     {$class = "{$class} col-md-{$params.lg->getValue()}"}
 {/if}
-{if $params.xl->getValue() !== false}
+{if $params.xl->getValue() !== false && $params.xl->getValue() !== true}
     {$class = "{$class} col-lg-{$params.xl->getValue()}"}
 {/if}
 
