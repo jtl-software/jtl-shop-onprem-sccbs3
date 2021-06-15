@@ -1,8 +1,7 @@
 {$id = $params.id->getValue()|default:uniqid()}
 <{$params.tag}
     role="presentation"
-    class="{if $params.active->getValue() === true}active{/if}
-        {$params.class->getValue()}"
+    class="{if $params.active->getValue() === true}active {/if}{$params.class->getValue()}"
     {if $params.id->hasValue()}id="label-{$id}"{/if}
     {if $params.style->hasValue()}style="{$params.style->getValue()}"{/if}
     {if $params.itemprop->hasValue()}itemprop="{$params.itemprop->getValue()}"{/if}

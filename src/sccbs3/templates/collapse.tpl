@@ -1,7 +1,6 @@
 <{$params.tag->getValue()}
-    class="collapse
-            {if $params['is-nav']->getValue() === true}navbar-collapse{/if}
-            {$params.class->getValue()}{if $params.visible->getValue() === true}in{/if}"
+    class="collapse{if $params['is-nav']->getValue() === true} navbar-collapse{/if}
+            {$params.class->getValue()}{if $params.visible->getValue() === true} in{/if}"
     {if $params.id->hasValue()}id="{$params.id->getValue()}"{/if}
     {if $params.style->hasValue()}style="{$params.style->getValue()}"{/if}
     {if $params.itemprop->hasValue()}itemprop="{$params.itemprop->getValue()}"{/if}
