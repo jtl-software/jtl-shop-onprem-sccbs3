@@ -1,8 +1,6 @@
 <?php
-/**
- * @copyright (c) JTL-Software-GmbH
- * @license       http://jtl-url.de/jtlshoplicense
- */
+
+declare(strict_types=1);
 
 namespace sccbs3;
 
@@ -16,12 +14,12 @@ class Bs3sccRenderer extends Renderer
 {
     /**
      * BS3sccRenderer constructor.
-     * @param JTL\Smarty\JTLSmarty|\Smarty $smarty $smarty
+     * @param JTL\Smarty\JTLSmarty|\Smarty|\Smarty\Smarty $smarty $smarty
      */
     public function __construct($smarty)
     {
         $this->smarty = $smarty;
-        $this->smarty->addTemplateDir(__DIR__ . '/templates/', __NAMESPACE__);
+        $this->smarty->addTemplateDir(__DIR__ . '/templates/scc/', __NAMESPACE__);
         parent::__construct($smarty);
     }
 }
