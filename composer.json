@@ -14,7 +14,7 @@
   ],
   "require": {
     "php": ">=8.1",
-    "jtlshop/scc": "dev-SHOP-8441"
+    "jtlshop/scc": "dev-master"
   },
   "autoload": {
     "psr-4": { "sccbs3\\": "src/sccbs3" }
